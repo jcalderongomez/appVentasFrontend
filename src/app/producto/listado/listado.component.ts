@@ -8,7 +8,7 @@ import { ProductoService } from '../producto.service';
 })
 export class ListadoComponent implements OnInit {
 
-  displayedColumns: string[] = ['productoId','nombre','descripcion','cantidad','precio','fechaCaptura','categoriaId','categoria'];
+  displayedColumns: string[] = ['productoId','nombre','descripcion','cantidad','precio','fechaCaptura','categoriaId','categoria','accion'];
   
   constructor(private productoService: ProductoService ) { }
 

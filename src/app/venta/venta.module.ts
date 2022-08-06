@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListadoComponent } from './listado/listado.component';
-import { EliminarComponent } from './eliminar/eliminar.component';
-import { EditarComponent } from './editar/editar.component';
 import { AgregarComponent } from './agregar/agregar.component';
+import { EliminarComponent } from './eliminar/eliminar.component';
 import { HomeComponent } from './home/home.component';
-import { ProductoRoutingModule } from './producto-routing.module';
+import { EditarComponent } from './editar/editar.component';
+import { VentaRoutingModule } from './venta-routing.module';
 import { MaterialModule } from '../material/material.module';
-import { ProductoService } from './producto.service';
+import { VentaService } from './venta.service';
 
 
 
@@ -17,15 +17,15 @@ import { ProductoService } from './producto.service';
     EliminarComponent,
     EditarComponent,
     AgregarComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
-    ProductoRoutingModule,
+    VentaRoutingModule,
     MaterialModule
-  ], 
+  ],
   providers:[
-    ProductoService
+    VentaService
   ]
 })
-export class ProductoModule { }
+export class VentaModule { }
